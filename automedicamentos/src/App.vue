@@ -1,9 +1,17 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/registro">Registro</router-link> |
+    <router-link to="/relación">Relación</router-link> |
+    <router-link to="/medicamento">Medicamento</router-link> |
+    <router-link to="/maquina">Máquina</router-link> |
+    <router-link to="/factura">Factura</router-link> |
+    <router-link to="/eps">Eps</router-link> |
+    <router-link to="/cd">Centro de Distribución</router-link>
+    
+  </nav>  
+  <router-view></router-view>
 </template>
 
 <style>
