@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Registro from '../views/Registro.vue'
-import Medicamentos from '../views/Medicamentos.vue'
-import Factura from '../views/Factura.vue'
-import CD from '../views/CD.vue'
-import Maquina from '../views/Maquina.vue'
-import Eps from '../views/Eps.vue'
-//import Relacion from '../paginas/Relacion.vue'
+import RegistroView from '../views/RegistroView.vue'
+import MedicamentosView from '../views/MedicamentosView.vue'
+import FacturaView from '../views/FacturaView.vue'
+import CDView from '../views/CDView.vue'
+import MaquinaView from '../views/MaquinaView.vue'
+import EpsView from '../views/EpsView.vue'
+import RelacionView from '../views/RelacionView.vue'
 
 const routes = [
   {
@@ -15,42 +15,39 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/',
+    path: '/registro',
     name: 'registro',
-    component: Registro
+    component: RegistroView
   },
   {
-    path: '/',
+    path: '/medicamentos',
     name: 'medicamentos',
-    component: Medicamentos
+    component: MedicamentosView
   },
   {
-    path: '/',
+    path: '/factura',
     name: 'factura',
-    component: Factura
+    component: FacturaView
   },
   {
-    path: '/',
+    path: '/cd',
     name: 'cd',
-    component: CD 
+    component: CDView
   },
   {
-    path: '/',
+    path: '/maquina',
     name: 'maquina',
-    component: Maquina
+    component: MaquinaView
   },
   {
-    path: '/',
+    path: '/eps',
     name: 'eps',
-    component: Eps 
+    component: EpsView
   },
   {
     path: '/relacion',
     name: 'relacion',
-
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/Relacion.vue')
-    }
+    component: RelacionView
   },
   {
     path: '/about',
